@@ -1,9 +1,8 @@
 "use client";
 import Link from "next/link";
-import Navbar from "../ui/navbar";
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "@/lib/actions/AuthContext";
 import { FormEvent, useState } from "react";
-import ErrorMsg from "../ui/errormsg";
+import ErrorMsg from "@/ui/errormsg";
 import { useRouter } from "next/navigation";
 
 export default function SignupPage(){
@@ -75,9 +74,7 @@ export default function SignupPage(){
     }
 
     return (
-        <div className="">
-            <Navbar/>
- 
+        <div className=""> 
             <div className="min-h-screen flex items-center justify-center p-4">
                 <div className="w-full max-w-md bg-white rounded-xl border-black border-2 shadow-2xl p-6 space-y-6">
                     <div className="text-2xl font-bold text-center text-gray-800">Sign Up</div>

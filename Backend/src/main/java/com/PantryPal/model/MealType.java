@@ -5,19 +5,11 @@ package com.PantryPal.model;
  *
  */
 public enum MealType {
-    BREAKFAST("BREAKFAST"),
-    LUNCH("LUNCH"),
-    DINNER("DINNER"),
-    SNACK("SNACK");
+    BREAKFAST,
+    LUNCH,
+    DINNER,
+    SNACK,
+    DESSERT;
 
-    private final String mealTypeName;
-
-    MealType(String mealType) {
-        this.mealTypeName = mealType;
-    }
-
-    public String getDisplayName() {
-        return mealTypeName;
-    }
 
 }

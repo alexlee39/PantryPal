@@ -1,3 +1,0 @@
-interface ErrorFormProps{
-    message: string
-}
